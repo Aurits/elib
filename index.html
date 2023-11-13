@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Website</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezrXmfwc60BLp6kPc0vHeSGiAP4zi8TVU2B+Ld7HqcFj2qq7G97HSM3qScYScU21" crossorigin="anonymous">
+    <style>
+        /* Additional styles for enhanced appearance */
+        .jumbotron {
+            background-image: url('images/library-background.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            color: white;
+        }
+
+        .featured-book {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -48,7 +71,30 @@
 <div class="container mt-4">
     <h2>Featured Books</h2>
     <div class="row">
-        <!-- Add your featured books content here -->
+        <div class="col-md-4">
+            <div class="featured-book">
+                <img src="https://via.placeholder.com/150" class="img-fluid" alt="Book Cover">
+                <h5 class="mt-3">Book Title 1</h5>
+                <p>Author: Author Name</p>
+                <p>Brief description of the book.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="featured-book">
+                <img src="https://via.placeholder.com/150" class="img-fluid" alt="Book Cover">
+                <h5 class="mt-3">Book Title 2</h5>
+                <p>Author: Author Name</p>
+                <p>Brief description of the book.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="featured-book">
+                <img src="https://via.placeholder.com/150" class="img-fluid" alt="Book Cover">
+                <h5 class="mt-3">Book Title 3</h5>
+                <p>Author: Author Name</p>
+                <p>Brief description of the book.</p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -56,9 +102,9 @@
 <div class="container mt-4">
     <h2>Library Services</h2>
     <ul>
-        <li>Borrowing</li>
-        <li>Research Assistance</li>
-        <li>Events</li>
+        <li><i class="fas fa-book"></i> Borrowing</li>
+        <li><i class="fas fa-search"></i> Research Assistance</li>
+        <li><i class="far fa-calendar-alt"></i> Events</li>
         <!-- Add more services as needed -->
     </ul>
 </div>
@@ -72,10 +118,10 @@
 <!-- Testimonials Section -->
 <div class="container mt-4">
     <h2>Testimonials</h2>
-    <blockquote class="blockquote">
+    <div class="testimonial">
         <p class="mb-0">"The library has been a valuable resource for my studies."</p>
         <footer class="blockquote-footer">Student</footer>
-    </blockquote>
+    </div>
     <!-- Add more testimonials as needed -->
 </div>
 
@@ -122,7 +168,6 @@
         </div>
     </div>
 </footer>
-
 
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
