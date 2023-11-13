@@ -1,6 +1,7 @@
 <!-- Catalog Page -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,153 +23,199 @@
         /* Add more styles as needed */
     </style>
 </head>
+
 <body>
 
-<!-- Header Section -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="50px" height="50px" alt="Library Logo" style="max-height: 40px;"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="books.html">Books</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="catalog.html">Catalog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Detailed Catalog Section -->
-<div class="container mt-4">
-    <h2>Detailed Catalog</h2>
-    <div class="table-responsive">
-        <table class="table table-bordered">
-            <thead class="thead-light">
-                <tr>
-                    <th scope="col">ISBN</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Author</th>
-                    <th scope="col">Genre</th>
-                    <th scope="col">Publication Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Dummy content for demonstration -->
-                <tr>
-                    <td>123456789</td>
-                    <td><a href="book.html">Book Title 1</a></td>
-                    <td>Author Name</td>
-                    <td>Fiction</td>
-                    <td>January 1, 2022</td>
-                </tr>
-                <tr>
-                    <td>987654321</td>
-                    <td><a href="book.html">Another Book</a></td>
-                    <td>John Doe</td>
-                    <td>Non-fiction</td>
-                    <td>March 15, 2022</td>
-                </tr>
-                <tr>
-                    <td>555111333</td>
-                    <td><a href="book.html">The Encyclopedia</a></td>
-                    <td>Jane Smith</td>
-                    <td>Reference</td>
-                    <td>May 5, 2022</td>
-                </tr>
-                <!-- Add more rows as needed -->
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<!-- Advanced Search Section -->
-<div class="container mt-4">
-    <h2>Advanced Search</h2>
-    <form>
-        <!-- Add advanced search options as needed -->
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="isbnInput">ISBN</label>
-                <input type="text" class="form-control" id="isbnInput" placeholder="Enter ISBN">
-            </div>
-            <!-- Add more search fields as needed -->
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="50px" height="50px" alt="Library Logo"
+                style="max-height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
-        <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-</div>
+    </nav>
 
-<!-- Sorting Options Section -->
-<div class="container mt-4">
-    <h2>Sorting Options</h2>
-    <div class="btn-group" role="group" aria-label="Sorting Options">
-        <button type="button" class="btn btn-secondary">Title</button>
-        <button type="button" class="btn btn-secondary">Author</button>
-        <button type="button" class="btn btn-secondary">Genre</button>
-        <button type="button" class="btn btn-secondary">Publication Date</button>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="bg-dark text-light mt-5 p-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="catalog.html">Catalog</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Connect With Us</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Contact Information</h5>
-                <p>
-                    Library Address<br>
-                    City, State, Zip Code<br>
-                    Phone: (123) 456-7890<br>
-                    Email: library@example.com
-                </p>
-            </div>
-        </div>
-        <hr class="bg-light">
-        <div class="row">
-            <div class="col-md-6">
-                <p>&copy; 2023 Your Library. All rights reserved.</p>
-            </div>
-            <div class="col-md-6 text-right">
-                <p>Designed by Your Name</p>
-            </div>
+    <!-- Detailed Catalog Section -->
+    <div class="container mt-4">
+        <h2>Detailed Catalog</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">ISBN</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Publication Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dummy content for demonstration -->
+                    <tr>
+                        <td>123456789</td>
+                        <td><a href="book.html">Book Title 1</a></td>
+                        <td>Author Name</td>
+                        <td>Fiction</td>
+                        <td>January 1, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>987654321</td>
+                        <td><a href="book.html">Another Book</a></td>
+                        <td>John Doe</td>
+                        <td>Non-fiction</td>
+                        <td>March 15, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>555111333</td>
+                        <td><a href="book.html">The Encyclopedia</a></td>
+                        <td>Jane Smith</td>
+                        <td>Reference</td>
+                        <td>May 5, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td><a href="book.html">Book Title 1</a></td>
+                        <td>Author Name</td>
+                        <td>Fiction</td>
+                        <td>January 1, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>987654321</td>
+                        <td><a href="book.html">Another Book</a></td>
+                        <td>John Doe</td>
+                        <td>Non-fiction</td>
+                        <td>March 15, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>555111333</td>
+                        <td><a href="book.html">The Encyclopedia</a></td>
+                        <td>Jane Smith</td>
+                        <td>Reference</td>
+                        <td>May 5, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td><a href="book.html">Book Title 1</a></td>
+                        <td>Author Name</td>
+                        <td>Fiction</td>
+                        <td>January 1, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>987654321</td>
+                        <td><a href="book.html">Another Book</a></td>
+                        <td>John Doe</td>
+                        <td>Non-fiction</td>
+                        <td>March 15, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>555111333</td>
+                        <td><a href="book.html">The Encyclopedia</a></td>
+                        <td>Jane Smith</td>
+                        <td>Reference</td>
+                        <td>May 5, 2022</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
         </div>
     </div>
-</footer>
 
-<!-- Bootstrap JS and jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Advanced Search Section -->
+    <div class="container mt-4">
+        <h2>Advanced Search</h2>
+        <form>
+            <!-- Add advanced search options as needed -->
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="isbnInput">ISBN</label>
+                    <input type="text" class="form-control" id="isbnInput" placeholder="Enter ISBN">
+                </div>
+                <!-- Add more search fields as needed -->
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <!-- Sorting Options Section -->
+    <div class="container mt-4">
+        <h2>Sorting Options</h2>
+        <div class="btn-group" role="group" aria-label="Sorting Options">
+            <button type="button" class="btn btn-secondary">Title</button>
+            <button type="button" class="btn btn-secondary">Author</button>
+            <button type="button" class="btn btn-secondary">Genre</button>
+            <button type="button" class="btn btn-secondary">Publication Date</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <p>
+                        Library Address<br>
+                        City, State, Zip Code<br>
+                        Phone: (123) 456-7890<br>
+                        Email: library@example.com
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Your Library. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p>Designed by Your Name</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
