@@ -1,15 +1,15 @@
+<!-- book-details.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library - Books</title>
+    <title>Library - Book Details</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezrXmfwc60BLp6kPc0vHeSGiAP4zi8TVU2B+Ld7HqcFj2qq7G97HSM3qScYScU21" crossorigin="anonymous">
 </head>
 <body>
 
-<!-- Header Section -->
+<!-- Header Section (Same as Home Page) -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="50px" height="50px" alt="Library Logo" style="max-height: 40px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,148 +36,87 @@
     </div>
 </nav>
 
-<!-- Book Categories Section -->
+<!-- Book Details Section -->
 <div class="container mt-4">
-    <h2>Book Categories</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="book-cover1.jpg" class="img-fluid" alt="Book Cover 1">
+        </div>
+        <div class="col-md-8">
+            <h2>Book Title 1</h2>
+            <p><strong>Author:</strong> Author Name</p>
+            <p><strong>Genre:</strong> Fiction</p>
+            <p><strong>Description:</strong> A captivating description of the book, providing insights into the plot, characters, and themes. Engage readers with an intriguing overview.</p>
+            <p><strong>Availability:</strong> Available</p>
+            <!-- You can add more details as needed -->
+        </div>
+    </div>
+</div>
+
+<!-- Reviews Section -->
+<div class="container mt-4">
+    <h3>Reader Reviews</h3>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Review Title 1</h5>
+                    <p class="card-text">"This book kept me on the edge of my seat. The characters are well-developed, and the plot twists are unexpected. Highly recommended!"</p>
+                    <p class="card-text"><strong>Reviewer:</strong> Book Lover 1</p>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Review Title 2</h5>
+                    <p class="card-text">"An excellent read! The author's writing style is captivating, and the storyline is rich with emotion. I couldn't put it down."</p>
+                    <p class="card-text"><strong>Reviewer:</strong> Book Enthusiast 2</p>
+                </div>
+            </div>
+            <!-- Add more reviews as needed -->
+        </div>
+    </div>
+</div>
+
+<!-- Additional Details Section -->
+<div class="container mt-4">
+    <h3>Additional Details</h3>
+    <ul>
+        <li><strong>ISBN:</strong> 123456789</li>
+        <li><strong>Publisher:</strong> XYZ Publishing</li>
+        <li><strong>Publication Date:</strong> January 1, 2022</li>
+        <!-- Add more details as needed -->
+    </ul>
+</div>
+
+<!-- Related Books Section -->
+<div class="container mt-4">
+    <h3>Related Books</h3>
     <div class="row">
         <div class="col-md-4">
             <div class="card">
+                <img src="images/book.jpg" class="card-img-top" alt="Related Book 1">
                 <div class="card-body">
-                    <h5 class="card-title">Fiction</h5>
-                    <p class="card-text">Explore our collection of captivating fiction books. Immerse yourself in fictional worlds crafted by talented authors.</p>
-                    <a href="#" class="btn btn-primary">View Fiction Books</a>
+                    <h5 class="card-title">Related Book 1</h5>
+                    <p class="card-text">Author: Another Author</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
+                <img src="related-book2.jpg" class="card-img-top" alt="Related Book 2">
                 <div class="card-body">
-                    <h5 class="card-title">Non-fiction</h5>
-                    <p class="card-text">Discover informative non-fiction books on various topics. Expand your knowledge with our diverse selection.</p>
-                    <a href="#" class="btn btn-primary">View Non-fiction Books</a>
+                    <h5 class="card-title">Related Book 2</h5>
+                    <p class="card-text">Author: Yet Another Author</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Reference</h5>
-                    <p class="card-text">Access our reference books for in-depth information. Enhance your research with reliable and comprehensive resources.</p>
-                    <a href="#" class="btn btn-primary">View Reference Books</a>
-                </div>
-            </div>
-        </div>
+        <!-- Add more related books as needed -->
     </div>
 </div>
 
-<!-- Search Bar -->
-<div class="container mt-4">
-    <h2>Search for Books</h2>
-    <form>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search by title, author, or genre">
-        </div>
-        <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-</div>
-
-<!-- Book Listings Section -->
-<div class="container mt-4">
-    <h2>Book Listings</h2>
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="images/book.jpg" class="card-img-top" alt="Book Cover 1">
-                <div class="card-body">
-                    <h5 class="card-title">Book Title 1</h5>
-                    <p class="card-text">Author: Author Name</p>
-                    <p class="card-text">Availability: Available</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="images/book.jpg" class="card-img-top" alt="Book Cover 2">
-                <div class="card-body">
-                    <h5 class="card-title">Book Title 2</h5>
-                    <p class="card-text">Author: Author Name</p>
-                    <p class="card-text">Availability: Checked Out</p>
-                </div>
-            </div>
-        </div>
-        <!-- Add more book listings as needed -->
-    </div>
-</div>
-
-<!-- Filtering Options Section -->
-<div class="container mt-4">
-    <h2>Filtering Options</h2>
-    <div class="form-group">
-        <label for="genreSelect">Filter by Genre:</label>
-        <select class="form-control" id="genreSelect">
-            <option>All Genres</option>
-            <option>Fiction</option>
-            <option>Non-fiction</option>
-            <option>Reference</option>
-            <!-- Add more genres as needed -->
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="availabilitySelect">Filter by Availability:</label>
-        <select class="form-control" id="availabilitySelect">
-            <option>All</option>
-            <option>Available</option>
-            <option>Checked Out</option>
-        </select>
-    </div>
-    <!-- Add more filtering options (e.g., author, publication year) as needed -->
-</div>
-
-<!-- Footer -->
-<footer class="bg-dark text-light mt-5 p-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="catalog.html">Catalog</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Connect With Us</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Contact Information</h5>
-                <p>
-                    Library Address<br>
-                    City, State, Zip Code<br>
-                    Phone: (123) 456-7890<br>
-                    Email: library@example.com
-                </p>
-            </div>
-        </div>
-        <hr class="bg-light">
-        <div class="row">
-            <div class="col-md-6">
-                <p>&copy; 2023 Your Library. All rights reserved.</p>
-            </div>
-            <div class="col-md-6 text-right">
-                <p>Designed by Your Name</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Bootstrap JS and jQuery -->
+<!-- Bootstrap JS and jQuery (Same as Home Page) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
