@@ -1,4 +1,3 @@
-<!-- Books Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,7 @@
 
 <!-- Header Section -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="50px" height="50px"  alt="Library Logo" style="max-height: 40px;"></a>
+    <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="50px" height="50px" alt="Library Logo" style="max-height: 40px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,24 +43,27 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"><i class="fas fa-book"></i> Fiction</h5>
-                    <!-- Add content for Fiction category -->
+                    <h5 class="card-title">Fiction</h5>
+                    <p class="card-text">Explore our collection of captivating fiction books. Immerse yourself in fictional worlds crafted by talented authors.</p>
+                    <a href="#" class="btn btn-primary">View Fiction Books</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"><i class="fas fa-book"></i> Non-fiction</h5>
-                    <!-- Add content for Non-fiction category -->
+                    <h5 class="card-title">Non-fiction</h5>
+                    <p class="card-text">Discover informative non-fiction books on various topics. Expand your knowledge with our diverse selection.</p>
+                    <a href="#" class="btn btn-primary">View Non-fiction Books</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"><i class="fas fa-book"></i> Reference</h5>
-                    <!-- Add content for Reference category -->
+                    <h5 class="card-title">Reference</h5>
+                    <p class="card-text">Access our reference books for in-depth information. Enhance your research with reliable and comprehensive resources.</p>
+                    <a href="#" class="btn btn-primary">View Reference Books</a>
                 </div>
             </div>
         </div>
@@ -72,16 +74,10 @@
 <div class="container mt-4">
     <h2>Search for Books</h2>
     <form>
-        <div class="form-row">
-            <div class="col-md-8">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search by title, author, or genre">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-search"></i> Search</button>
-            </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search by title, author, or genre">
         </div>
+        <button type="submit" class="btn btn-primary">Search</button>
     </form>
 </div>
 
@@ -90,26 +86,24 @@
     <h2>Book Listings</h2>
     <div class="row">
         <div class="col-md-4 mb-4">
-            <a href="book.html">
-                <div class="card">
-                    <img src="book-cover1.jpg" class="card-img-top" alt="Book Cover 1">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-book"></i> Book Title 1</h5>
-                        <p class="card-text">Author: Author Name</p>
-                    </div>
+            <div class="card">
+                <img src="images/book.jpg" class="card-img-top" alt="Book Cover 1">
+                <div class="card-body">
+                    <h5 class="card-title">Book Title 1</h5>
+                    <p class="card-text">Author: Author Name</p>
+                    <p class="card-text">Availability: Available</p>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="col-md-4 mb-4">
-            <a href="book.html">
-                <div class="card">
-                    <img src="book-cover2.jpg" class="card-img-top" alt="Book Cover 2">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-book"></i> Book Title 2</h5>
-                        <p class="card-text">Author: Author Name</p>
-                    </div>
+            <div class="card">
+                <img src="images/book.jpg" class="card-img-top" alt="Book Cover 2">
+                <div class="card-body">
+                    <h5 class="card-title">Book Title 2</h5>
+                    <p class="card-text">Author: Author Name</p>
+                    <p class="card-text">Availability: Checked Out</p>
                 </div>
-            </a>
+            </div>
         </div>
         <!-- Add more book listings as needed -->
     </div>
@@ -118,19 +112,25 @@
 <!-- Filtering Options Section -->
 <div class="container mt-4">
     <h2>Filtering Options</h2>
-    <div class="form-row">
-        <div class="form-group col-md-4">
-            <label for="genreSelect">Filter by Genre:</label>
-            <select class="form-control" id="genreSelect">
-                <option>All Genres</option>
-                <option>Fiction</option>
-                <option>Non-fiction</option>
-                <option>Reference</option>
-                <!-- Add more genres as needed -->
-            </select>
-        </div>
-        <!-- Add more filtering options (e.g., author, availability) as needed -->
+    <div class="form-group">
+        <label for="genreSelect">Filter by Genre:</label>
+        <select class="form-control" id="genreSelect">
+            <option>All Genres</option>
+            <option>Fiction</option>
+            <option>Non-fiction</option>
+            <option>Reference</option>
+            <!-- Add more genres as needed -->
+        </select>
     </div>
+    <div class="form-group">
+        <label for="availabilitySelect">Filter by Availability:</label>
+        <select class="form-control" id="availabilitySelect">
+            <option>All</option>
+            <option>Available</option>
+            <option>Checked Out</option>
+        </select>
+    </div>
+    <!-- Add more filtering options (e.g., author, publication year) as needed -->
 </div>
 
 <!-- Footer -->
@@ -176,7 +176,6 @@
         </div>
     </div>
 </footer>
-
 
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
