@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library - Books</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezrXmfwc60BLp6kPc0vHeSGiAP4zi8TVU2B+Ld7HqcFj2qq7G97HSM3qScYScU21" crossorigin="anonymous">
 </head>
 <body>
 
@@ -18,7 +19,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Fiction</h5>
+                    <h5 class="card-title"><i class="fas fa-book"></i> Fiction</h5>
                     <!-- Add content for Fiction category -->
                 </div>
             </div>
@@ -26,7 +27,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Non-fiction</h5>
+                    <h5 class="card-title"><i class="fas fa-book"></i> Non-fiction</h5>
                     <!-- Add content for Non-fiction category -->
                 </div>
             </div>
@@ -34,7 +35,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Reference</h5>
+                    <h5 class="card-title"><i class="fas fa-book"></i> Reference</h5>
                     <!-- Add content for Reference category -->
                 </div>
             </div>
@@ -46,10 +47,16 @@
 <div class="container mt-4">
     <h2>Search for Books</h2>
     <form>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search by title, author, or genre">
+        <div class="form-row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search by title, author, or genre">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-search"></i> Search</button>
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Search</button>
     </form>
 </div>
 
@@ -57,14 +64,48 @@
 <div class="container mt-4">
     <h2>Book Listings</h2>
     <div class="row">
-        <!-- Add book listings content here -->
+        <div class="col-md-4 mb-4">
+            <a href="book.html">
+                <div class="card">
+                    <img src="book-cover1.jpg" class="card-img-top" alt="Book Cover 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-book"></i> Book Title 1</h5>
+                        <p class="card-text">Author: Author Name</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a href="book.html">
+                <div class="card">
+                    <img src="book-cover2.jpg" class="card-img-top" alt="Book Cover 2">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-book"></i> Book Title 2</h5>
+                        <p class="card-text">Author: Author Name</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Add more book listings as needed -->
     </div>
 </div>
 
 <!-- Filtering Options Section -->
 <div class="container mt-4">
     <h2>Filtering Options</h2>
-    <!-- Add filtering options (e.g., dropdowns, checkboxes) as needed -->
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="genreSelect">Filter by Genre:</label>
+            <select class="form-control" id="genreSelect">
+                <option>All Genres</option>
+                <option>Fiction</option>
+                <option>Non-fiction</option>
+                <option>Reference</option>
+                <!-- Add more genres as needed -->
+            </select>
+        </div>
+        <!-- Add more filtering options (e.g., author, availability) as needed -->
+    </div>
 </div>
 
 <!-- Bootstrap JS and jQuery (Same as Home Page) -->
