@@ -1,0 +1,106 @@
+<!-- Books Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Books</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Header Section (Same as Home Page) -->
+
+<!-- Book Categories Section -->
+<div class="container mt-4">
+    <h2>Book Categories</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fiction</h5>
+                    <p class="card-text">Explore our collection of captivating fiction books.</p>
+                    <!-- Add content for Fiction category -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Non-fiction</h5>
+                    <p class="card-text">Discover informative non-fiction books on various topics.</p>
+                    <!-- Add content for Non-fiction category -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Reference</h5>
+                    <p class="card-text">Access our reference books for in-depth information.</p>
+                    <!-- Add content for Reference category -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Search Bar -->
+<div class="container mt-4">
+    <h2>Search for Books</h2>
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search by title, author, or genre">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+<!-- Book Listings Section -->
+<div class="container mt-4">
+    <h2>Book Listings</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="book-cover1.jpg" class="card-img-top" alt="Book Cover 1">
+                <div class="card-body">
+                    <h5 class="card-title">Book Title 1</h5>
+                    <p class="card-text">Author: Author Name</p>
+                    <p class="card-text">Availability: Available</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="book-cover2.jpg" class="card-img-top" alt="Book Cover 2">
+                <div class="card-body">
+                    <h5 class="card-title">Book Title 2</h5>
+                    <p class="card-text">Author: Author Name</p>
+                    <p class="card-text">Availability: Checked Out</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more book listings as needed -->
+    </div>
+</div>
+
+<!-- Filtering Options Section -->
+<div class="container mt-4">
+    <h2>Filtering Options</h2>
+    <div class="form-group">
+        <label for="genreSelect">Filter by Genre:</label>
+        <select class="form-control" id="genreSelect">
+            <option>All Genres</option>
+            <option>Fiction</option>
+            <option>Non-fiction</option>
+            <option>Reference</option>
+            <!-- Add more genres as needed -->
+        </select>
+    </div>
+    <!-- Add more filtering options (e.g., author, availability) as needed -->
+</div>
+
+<!-- Bootstrap JS and jQuery (Same as Home Page) -->
+
+</body>
+</html>
